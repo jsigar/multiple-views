@@ -1,0 +1,8 @@
+Product List
+<div *ngFor="let group of productGroups">
+  <ul>
+    <li *ngFor="let product of group.saleProducts"  [hidden]="product.hide">
+      <a href="javascript:void(0);" (click)="clickName(product)">{{product.name}}</a> {{product.price}}
+    </li>
+  </ul>
+</div>

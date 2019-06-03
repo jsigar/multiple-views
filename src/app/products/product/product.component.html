@@ -1,0 +1,13 @@
+Parent component
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products"  [hidden]="p.hide">
+      <td><a href="javascript:void(0);" (click)="clickName(p)">{{p.name}}</a></td>
+      <td>{{p.price}}</td>
+    </tr>
+  </tbody>
+</table>
